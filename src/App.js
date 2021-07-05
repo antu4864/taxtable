@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Route, Switch} from "react-router-dom";
+import Bam from "./Bam";
+import Ca from "./Ca";
+import Cgt from "./Cgt";
+import Ct from "./Ct";
+import Dtc from "./Dtc";
+import It from "./It";
+import Ias from "./Ias";
+import Lt from "./Lt";
+import Ma from "./Ma";
+import Nic from "./Nic";
+import Pen from "./Pen";
+import Sd from "./Sd";
+import Vat from "./Vat";
+import Vb from "./Vb";
+import Menu from "./Menu";
 
-function App() {
+  
+
+const App = () => {
+   
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <> 
+     
+      <Switch>
+        <Route exact path='/' component={Menu} />
+        <Route path='/Bam' component={Bam} />
+        <Route path='/Ca' component={Ca}/>
+        <Route path='/Cgt' component={Cgt}/>
+        <Route path='/Ct' component={Ct}/>
+        <Route path='/Dtc' component={Dtc}/>
+        <Route path='/It' component={It}/>
+        <Route path='/Ias' component={Ias}/>
+        <Route path='/Lt' component={Lt}/>
+        <Route path='/Ma' component={Ma}/>
+        <Route path='/Nic' component={Nic}/>
+        <Route path='/Pen' component={Pen}/>
+        <Route path='/Sd' component={Sd}/>
+        <Route path='/Vat' component={Vat}/>
+        <Route path='/Vb' component={Vb}/>
+        
+      </Switch>
+ 
+   </>
   );
 }
 
