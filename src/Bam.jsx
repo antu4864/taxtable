@@ -9,7 +9,7 @@ const Bam=() =>{
   return (
 <>
     <div className="container1">
-      <h3>Benefits and Misc.</h3>
+      <h3>Benefits and Misc.  </h3>
         <h4>Weekly Benfit</h4>
    
      <table className="table">
