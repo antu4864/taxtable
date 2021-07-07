@@ -1,5 +1,6 @@
 {
   "name": "tax",
+  "homepage": "https://antu4864.github.io/taxtable",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
